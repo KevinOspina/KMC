@@ -8,20 +8,18 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarColor01" style="margin-left: 20px;">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home
+    <ul class="navbar-nav mr-auto" id="headerMenu">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink] = "['/home']" [routerLinkActive] = "['active']">Home
           <span class="sr-only">(current)</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" [routerLink] = "['/services']" [routerLinkActive] = "['active']" >Servicios</a>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#" [routerLinkActive] = "['active']">About</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -35,7 +33,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Log in</button>
+      <a routerLink="/init"><button class="btn btn-secondary pull-right" >Log in</button></a>
     </form>
 
 
