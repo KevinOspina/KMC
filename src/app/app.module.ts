@@ -10,7 +10,7 @@ import { FooterComponent } from './Componentes/Footer/footer/footer.component';
 import { HomeComponent } from './Componentes/Home/home/home.component'
 import { appRountingProviders, routing } from './app.routing';
 import { ServicesComponent } from './Componentes/Services/services/services.component';
-import { ErrorComponent } from './Componentes-extra/Error/error/error.component';
+//import { ErrorComponent } from './Componentes-extra/Error/error/error.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,7 @@ import { ErrorComponent } from './Componentes-extra/Error/error/error.component'
     FooterComponent,
     HomeComponent,
     ServicesComponent,
-    ErrorComponent
+    //ErrorComponent
   ],
   imports: [
     BrowserModule,
