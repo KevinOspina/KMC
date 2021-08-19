@@ -3,7 +3,7 @@ FROM node:latest as node
 WORKDIR /app
 COPY ./ /app/
 RUN npm install -g npm@7.14.0
-RUN npm install typescript@4.2 --force --legacy-peer-deps
+RUN npm install typescript@4.1.0 --force --legacy-peer-deps
 RUN npm install --force --legacy-peer-deps
 ARG configuration=production
 RUN npm run build -- --prod
